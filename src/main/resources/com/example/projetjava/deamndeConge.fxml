@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.DemandeCongController">
+   <children>
+      <AnchorPane prefHeight="708.0" prefWidth="942.0">
+         <children>
+            <Button fx:id="supprimerButton" layoutX="670.0" layoutY="595.0" mnemonicParsing="false" onAction="#fermer" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #cc1313;" text="Supprimer" textFill="#f8f5f5">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ajouterButton" layoutX="483.0" layoutY="595.0" mnemonicParsing="false" onAction="#demande" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #cc1313;" text="Ajouter" textFill="#e4dfdf">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="708.0" prefWidth="295.0" style="-fx-background-color: #263F73;">
+               <children>
+                  <Label alignment="CENTER" layoutX="31.0" layoutY="77.0" prefHeight="17.0" prefWidth="226.0" text="TEAMWORK" textFill="#f8f6f6" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="570.0" prefHeight="33.0" prefWidth="258.0" text="Espace Employe" textFill="#f8f6f6" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="450.0" layoutY="60.0" prefHeight="66.0" prefWidth="389.0" text="Demande congé" textFill="#263f73">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="323.0" text="Date début" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="tf_date_deb" layoutX="561.0" layoutY="319.0" prefHeight="31.0" prefWidth="240.0" />
+            <DatePicker fx:id="tf_date_rep" layoutX="565.0" layoutY="460.0" prefHeight="31.0" prefWidth="240.0" />
+            <Label layoutX="322.0" layoutY="460.0" prefHeight="30.0" prefWidth="177.0" text="Date reprise" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="tf_date_fin" layoutX="564.0" layoutY="388.0" prefHeight="31.0" prefWidth="240.0" />
+            <Label layoutX="323.0" layoutY="388.0" text="Date fin" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="524.0" prefHeight="30.0" prefWidth="177.0" text="Type de maladie" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="maladie" layoutX="528.0" layoutY="529.0" mnemonicParsing="false" text="Maladie" />
+            <CheckBox fx:id="maternité" layoutX="670.0" layoutY="529.0" mnemonicParsing="false" text="Maternité" />
+            <CheckBox fx:id="anuelle" layoutX="800.0" layoutY="529.0" mnemonicParsing="false" text="Anuelle" />
+            <Label layoutX="321.0" layoutY="264.0" text="prenom" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="206.0" text="id" textFill="#170000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_id" layoutX="558.0" layoutY="198.0" prefHeight="31.0" prefWidth="240.0" />
+            <TextField fx:id="tf_prenom" layoutX="560.0" layoutY="257.0" prefHeight="31.0" prefWidth="240.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

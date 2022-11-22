@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.interfaceAdController">
+   <children>
+      <TableView fx:id="table" layoutX="527.0" layoutY="265.0" prefHeight="253.0" prefWidth="566.0" style="-fx-background-color: #bfb8b8;">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nom" prefWidth="134.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="119.0" text="Prénom" />
+            <TableColumn fx:id="date_naiss" prefWidth="119.0" text="date_naiss" />
+            <TableColumn fx:id="lieu_naiss" prefWidth="119.0" text="lieu_naiss" />
+            <TableColumn fx:id="etat_civil" prefWidth="119.0" text="etat_civil" />
+            <TableColumn fx:id="num" prefWidth="119.0" text="num" />
+            <TableColumn fx:id="email" prefWidth="119.0" text="email" />
+            <TableColumn fx:id="profession" prefWidth="119.0" text="profession" />
+        </columns>
+      </TableView>
+      <Button fx:id="modifierButton" layoutX="733.0" layoutY="625.0" mnemonicParsing="false" onAction="#ModifierEmp" prefHeight="33.0" prefWidth="108.0" style="-fx-background-color: #cc1313;" text="Modifier" textFill="#e4dfdf">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Button>
+      <Button fx:id="supprimerButton" layoutX="893.0" layoutY="625.0" mnemonicParsing="false" onAction="#supprimerEmp" style="-fx-background-color: #cc1313;" text="Supprimer" textFill="#f8f5f5">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Button>
+      <Button fx:id="ajouterButton" layoutX="570.0" layoutY="625.0" mnemonicParsing="false" onAction="#aojuterEMp" prefHeight="33.0" prefWidth="99.0" style="-fx-background-color: #cc1313;" text="Ajouter" textFill="#e4dfdf">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Button>
+      <TextField fx:id="rechercherEmp" layoutX="527.0" layoutY="205.0" prefHeight="31.0" prefWidth="566.0" />
+      <Label layoutX="527.0" layoutY="140.0" prefHeight="46.0" prefWidth="163.0" text="Rechercher" textFill="#cc1313">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <AnchorPane layoutY="-7.0" prefHeight="771.0" prefWidth="445.0" style="-fx-background-color: #263F73;">
+         <children>
+            <TextField fx:id="tf_email" layoutX="193.0" layoutY="570.0" />
+            <Label layoutX="25.0" layoutY="574.0" text="Email" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_prof" layoutX="193.0" layoutY="638.0" />
+            <Label layoutX="25.0" layoutY="638.0" text="profession" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="500.0" text="Numero" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_num" layoutX="194.0" layoutY="499.0" />
+            <TextField fx:id="tf_etat" layoutX="194.0" layoutY="432.0" />
+            <TextField fx:id="tf_lieu" layoutX="194.0" layoutY="371.0" />
+            <DatePicker fx:id="tf_date" layoutX="194.0" layoutY="307.0" prefHeight="31.0" prefWidth="187.0" />
+            <TextField fx:id="tf_prenom" layoutX="194.0" layoutY="242.0" />
+            <TextField fx:id="tf_nom" layoutX="194.0" layoutY="179.0" />
+            <TextField fx:id="tf_id" layoutX="194.0" layoutY="117.0" />
+            <Label layoutX="23.0" layoutY="432.0" text="Etat civil" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="371.0" text="Lieu de naissance" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="308.0" text="Date de naissance" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="243.0" text="Prenom" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="181.0" text="Nom" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="118.0" text="ID" textFill="#eeeaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="86.0" layoutY="46.0" prefHeight="17.0" prefWidth="226.0" text="TEAMWORK" textFill="#f8f6f6" textOverrun="CLIP">
+               <effect>
+                  <DropShadow color="#3f4c66" />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold Italic" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="521.0" layoutY="37.0" text="Informations des personnels" textFill="#263f73">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

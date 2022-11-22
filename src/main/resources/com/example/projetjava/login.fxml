@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.LoginController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="468.0" prefWidth="261.0" style="-fx-background-color: #263F73;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="56.0" prefHeight="17.0" prefWidth="226.0" text="TEAMWORK" textFill="#f8f6f6" textOverrun="CLIP">
+               <font>
+                  <Font name="Verdana Bold Italic" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#3f4c66" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="378.0" prefHeight="33.0" prefWidth="244.0" text="Espace employé" textFill="#f8f6f6" textOverrun="CLIP">
+               <font>
+                  <Font name="Verdana Bold Italic" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#3f4c66" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/employees.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="cancelButton" layoutX="354.0" layoutY="342.0" mnemonicParsing="false" onAction="#CancelBut" prefHeight="40.0" prefWidth="244.0" style="-fx-background-color: #263F73;" text="Cancel" textFill="#f2f2f2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton" layoutX="355.0" layoutY="281.0" mnemonicParsing="false" onAction="#LoginBut" prefHeight="40.0" prefWidth="244.0" style="-fx-background-color: #263F73;" text="Login" textFill="#f2f2f2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passtxt" layoutX="434.0" layoutY="193.0" prefHeight="31.0" prefWidth="148.0" promptText="Password" />
+      <TextField fx:id="usertxt" layoutX="433.0" layoutY="139.0" prefHeight="25.0" prefWidth="150.0" promptText="Username" />
+      <Label layoutX="317.0" layoutY="195.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="141.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="341.0" layoutY="74.0" prefHeight="17.0" prefWidth="226.0" text="SECURE LOGIN" textFill="#1e0000" textOverrun="CLIP">
+         <effect>
+            <DropShadow color="#908c8c" />
+         </effect>
+         <font>
+            <Font name="Verdana Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="logginMsg" layoutX="417.0" layoutY="245.0" prefHeight="21.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>

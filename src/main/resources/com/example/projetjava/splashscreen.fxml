@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--fx:controller="com.example.projetjava.SplashScreen""-->
+
+<AnchorPane prefHeight="306.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane prefHeight="306.0" prefWidth="545.0" style="-fx-background-color: #263F73;">
+            <children>
+                <Label alignment="CENTER" layoutX="115.0" layoutY="46.0" prefHeight="30.0" prefWidth="299.0" style="-fx-background-color: #263F73;" text="Welcome" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                    <font>
+                        <Font name="Comic Sans MS" size="36.0" />
+                    </font>
+                </Label>
+                <ProgressBar layoutX="117.0" layoutY="244.0" prefHeight="18.0" prefWidth="320.0" progress="0.0" />
+                <Label layoutX="268.0" layoutY="262.0" text="0%" textFill="#e1e6e8">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="138.0" fitWidth="200.0" layoutX="168.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
+
+
+

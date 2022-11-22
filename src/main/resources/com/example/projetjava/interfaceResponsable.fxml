@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.interfaceResponsable">
+   <children>
+      <AnchorPane prefHeight="574.0" prefWidth="754.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="580.0" prefWidth="260.0" style="-fx-background-color: #263F73;">
+               <children>
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="436.0" prefHeight="43.0" prefWidth="214.0" text="Espace " textFill="#f8f6f6" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="70.0" prefHeight="38.0" prefWidth="214.0" text="TEAMWORK" textFill="#f8f6f6" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="468.0" prefHeight="59.0" prefWidth="214.0" text="Responsable" textFill="#f8f6f6" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="258.0" layoutY="-1.0" prefHeight="574.0" prefWidth="496.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="127.0" layoutY="83.0" prefHeight="17.0" prefWidth="226.0" text="Bienvenue" textFill="#263f73" textOverrun="CLIP">
+                     <effect>
+                        <DropShadow color="#3f4c66" />
+                     </effect>
+                     <font>
+                        <Font name="Verdana Bold Italic" size="34.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="74.0" layoutY="201.0" mnemonicParsing="false" onAction="#conge" prefHeight="51.0" prefWidth="321.0" style="-fx-background-color: #263F73;" text="Les congés" textFill="#e4dfdf">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="74.0" layoutY="309.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="321.0" style="-fx-background-color: #263F73;" text="Les fiches de paies" textFill="#e4dfdf">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="75.0" layoutY="413.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="328.0" style="-fx-background-color: #263F73;" text="planning" textFill="#e4dfdf">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
